@@ -1,0 +1,168 @@
+body, h1, p, button {
+    margin: auto;
+}
+
+/* Center align content vertically and horizontally */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040; /* Background color for the entire page */
+    position: relative; /* Add this line to establish a positioning context */
+}
+
+
+.fin-track {
+    text-align: center;
+    color: #ffffff; /* Color for the header */
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative; /* Add this line to establish a positioning context */
+    z-index: 1; /* Add z-index to place content above the pseudo-element */
+}
+
+.back-button {
+    color: #ffe600; /* Color for the back button */
+    text-decoration: none;
+    margin-right: 10px; /* Add space between the back button and text */
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #91919f; /* Color for input field borders */
+    font-family: "Inter", sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    background-color: transparent;
+    color: #91919f; /* Color for input field text */
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #91919f; /* Color for the eye icon */
+    cursor: pointer;
+}
+
+.terms-policy {
+    color: #ffe600; /* Color for the "Terms of Service and Privacy Policy." */
+    margin-left: 0; /* Add left margin for spacing */
+}
+
+/* Adjust the checkbox styles */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add pointer cursor for the label */
+}
+
+.checkbox {
+    margin-right: 25px;
+    appearance: none; 
+    position: relative;
+}
+
+.checkbox::before {
+    content: ""; /* Empty content initially */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #91919f; /* Border color for the checkbox */
+    border-radius: 3px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 15px;
+    color: transparent; /* Make the checkmark transparent initially */
+    transition: 0.2s; /* Add transition for smoother effect */
+}
+
+.checkbox:checked::before {
+    content: "\2713"; /* Unicode checkmark character */
+    color: #fff; /* Color for the checkmark when checked */
+    background-color: #ffe600; /* Background color for the checked checkbox */
+    border-color: #ffe600; /* Border color for the checked checkbox */
+}
+
+.agree{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+}
+/* Style for the Google icon */
+.google-icon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Add space between the icon and text */
+}
+
+
+.signup-button {
+    background-color: #ffe600; /* Color for the Sign Up button */
+    color: #404040; /* Text color for the Sign Up button */
+    font-family: "Inter", sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px;
+    padding: 10px 50px; /* Adjust the button size as needed */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.or-with {
+    color: #91919f; /* Color for the "Or with" text */
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px; /* Adjust top margin as needed */
+    margin-bottom: 8px;
+}
+
+.google-button {
+    background-color: #f1f1fa; /* Color for the Google button */
+    color: #404040; /* Text color for the Google button */
+    font-family: "Inter", sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 18px;
+    padding: 10px 20px; /* Adjust the button size as needed */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px; /* Adjust top margin as needed */
+}
+
+.already-have-account {
+    color: #91919f; /* Color for the "Already have an account?" text */
+    font-family: "Inter", sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.login-link {
+    color: #ffe600; /* Color for the "Login" link */
+    text-decoration: none;
+    border-bottom: 1px solid #ffe600; /* Underline effect */
+}

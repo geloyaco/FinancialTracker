@@ -1,0 +1,98 @@
+body, h1, p, button {
+    margin: auto;
+}
+
+/* Center align content vertically and horizontally */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040; /* Background color for the entire page */
+    position: relative; /* Add this line to establish a positioning context */
+}
+
+
+.fin-track {
+    text-align: center;
+    color: #ffffff; /* Color for the header */
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative; /* Add this line to establish a positioning context */
+    z-index: 1; /* Add z-index to place content above the pseudo-element */
+}
+
+.back-button {
+    color: #ffe600; /* Color for the back button */
+    text-decoration: none;
+    margin-right: 20px; /* Add space between the back button and text */
+}
+
+.input-field {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #91919f; /* Color for input field borders */
+    font-family: "Inter", sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    background-color: transparent;
+    color: #91919f; /* Color for input field text */
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    transform: translateY(-50%);
+    color: #91919f; /* Color for the eye icon */
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #F5F5F5; /* Color for the Sign Up button */
+    color: #404040; /* Text color for the Sign Up button */
+    font-family: "Inter", sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 5px 30px; /* Adjust the button size as needed */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.forgot-password{
+    color:#ffe600;
+    font-weight: 600px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.signup-link {
+    color: #ffe600; /* Color for the "Login" link */
+    text-decoration: none;
+    border-bottom: 1px solid #ffe600; /* Underline effect */
+    font-family: "Inter", sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+
+}
+
+.dont-have-account{
+    color:#91919F;
+    font-family: "Inter", sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+}

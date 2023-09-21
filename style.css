@@ -1,0 +1,82 @@
+/* Reset default margin and padding */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center align content vertically and horizontally */
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040; /* Background color for the entire page */
+    position: relative; /* Add this line to establish a positioning context */
+}
+
+.fin-track {
+    text-align: center;
+    color: #ffffff; /* Color for the Fintrack header */
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    position: relative; /* Add this line to establish a positioning context */
+    z-index: 1; /* Add z-index to place content above the pseudo-element */
+}
+
+.header img.money-icon {
+    width: 80px; /* Adjust the size of the money icon */
+    height: auto;
+    margin-right: 10px; /* Add space between the icon and text */
+    color: #11110e; /* Color for the money icon */
+}
+
+.login-content {
+    margin-top: 26px; /* Adjust the spacing from the header */
+}
+
+/* New Layer with Margin and Border Radius */
+.fin-track::before {
+    content: ""; /* Add this line to create a pseudo-element */
+    background-color: #1E1E1E;
+    position: absolute;
+    top: -280px; /* Adjust top, right, bottom, and left values to control the layer size */
+    right: -510px;
+    bottom: -280px;
+    left: -510px;
+    border-radius: 16px; /* Apply border radius for rounded corners */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.description {
+    color: #f5f5f5; /* Color for the description text */
+    font-family: "Inter", sans-serif;
+    font-weight: 200; /* Extra Light */
+    font-size: 22px;
+    margin-bottom: 20px; /* Add space below the description */
+}
+
+.signup-button {
+    background-color: #ffe600; /* Color for the Sign Up button */
+    color: #404040; /* Text color for the Sign Up button */
+    font-family: "Inter", sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px;
+    padding: 10px 50px; /* Adjust the button size as needed */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px; /* Add space between the buttons */
+}
+
+.login-button {
+    background-color: #f5f5f5; /* Color for the Login button */
+    color: #404040; /* Text color for the Login button */
+    font-family: "Inter", sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px;
+    padding: 10px 65px; /* Adjust the button size as needed */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
